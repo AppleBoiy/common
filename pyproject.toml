@@ -1,7 +1,7 @@
 [tool.black]
 line-length = 88
 target-version = ['py310']
-include = '\.pyi?$'
+include = '\.(py|ipynb)$'
 exclude = '''
 /(
     \.git
@@ -32,3 +32,9 @@ exclude = ["**/node_modules",
 venvPath = "/opt/homebrew/Caskroom/miniconda/base/envs"
 venv = "webapp"
 
+[tool.autopep8]
+max_line_length = 88
+ignore = ["E501", "W6"]
+in-place = true
+recursive = true
+aggressive = 3
