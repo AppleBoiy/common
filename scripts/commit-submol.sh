@@ -26,3 +26,4 @@ done
 echo "Committing parent repository"
 git add .
 git commit -m "$commit_message"
+git push
