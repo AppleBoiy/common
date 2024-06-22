@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-read -r commit_message
+read -p "Commit message: " commit_message
 
 if [ -z "$commit_message" ]; then
     cat <<EOF
